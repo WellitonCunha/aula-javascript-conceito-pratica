@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aula 4 — JavaScript Interativa</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<section class="slide active">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>01 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">DESENV. WEB</div>
+        <h1>HTML5, CSS, JavaScript e PHP</h1>
+        <div class="body">AULA 4 • INTRODUÇÃO AO JAVASCRIPT</div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>02 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Introdução à Linguagem JavaScript</div>
+        <h1>Histórico e origem</h1>
+        <div class="body">• Desenvolvida por Brendan Eich em 1995.<br>
+ • Inicialmente chamada <b>Mocha</b>, depois LiveScript e finalmente JavaScript.<br>
+ • Criada em cerca de 10 dias para o navegador Netscape Navigator.</div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>03 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Breve histórico</div>
+        <h1>Evolução da linguagem</h1>
+        <div class="body"><b>1997</b> — padronização pela ECMA International como ECMAScript.<br>
+ <b>Anos 2000</b> — popularização do AJAX e páginas mais dinâmicas.<br>
+ <b>2009</b> — Node.js permite JavaScript no lado do servidor.<br>
+ <b>ES5</b> — 2009 &nbsp; • &nbsp; <b>ES6/ES2015</b> — 2015: let, const, arrow functions, classes e mais.</div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>04 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Principais usos</div>
+        <h1>Onde JavaScript aparece?</h1>
+        <div class="body"><div class="cards">
+ <div><b>CLIENT-SIDE</b><br>DOM, formulários, animações e interatividade.</div>
+ <div><b>SERVER-SIDE</b><br>Node.js, APIs, arquivos e acesso a dados.</div>
+ <div><b>TEMPO REAL</b><br>WebSockets, chats e jogos online.</div></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>05 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Características</div>
+        <h1>Por que JavaScript é tão usado?</h1>
+        <div class="body"><div class="chips"><span>Interpretada</span><span>Multiparadigma</span><span>Dinâmica</span>
+ <span>Fracamente tipada</span><span>Protótipos</span><span>Assíncrona</span>
+ <span>Client + Server</span><span>Portável</span><span>Ecossistema amplo</span></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>06 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Client-Side × Server-Side</div>
+        <h1>Onde o código é executado?</h1>
+        <div class="body"><div class="split"><div><h3>🌐 Client-Side</h3><p>Navegador do usuário</p><p>Interface e interatividade</p></div>
+ <div><h3>🖥️ Server-Side</h3><p>Servidor</p><p>Dados e lógica de negócio</p></div></div>
+ <p class="note">Exemplos server-side citados no material: Node.js, PHP e Python.</p></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>06.5 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Visão geral</div>
+        <h1>JavaScript em ação</h1>
+        <div class="body">
+          <p>O navegador interpreta a lógica do usuário e o servidor responde com dados e regras.</p>
+          <div class="illustration-wrap">
+            <img src="js-illustration.svg" alt="Ilustração de JavaScript no navegador e no servidor">
+          </div>
+        </div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>07 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Tipos Primitivos</div>
+        <h1>Os valores básicos</h1>
+        <div class="body"><div class="grid">
+ <b>String</b><code>"Olá"</code><b>Number</b><code>42 • 3.14</code>
+ <b>Boolean</b><code>true • false</code><b>Undefined</b><code>let x;</code>
+ <b>Null</b><code>let y = null;</code><b>Symbol</b><code>Symbol("id")</code>
+ <b>BigInt</b><code>12345678901234567890n</code></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>08 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Variáveis</div>
+        <h1>let, const e valores</h1>
+        <div class="body"><p>Use o editor abaixo para experimentar variáveis.</p>
+ <div class="editor"><textarea id="ed1">let nome = "Ana";
+let idade = 20;
+console.log(nome, idade);</textarea>
+ <button onclick="runCode('ed1','out1')">▶ Executar</button><pre id="out1"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>09 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Estrutura de decisão</div>
+        <h1>IF / ELSE</h1>
+        <div class="body"><div class="editor"><textarea id="ed2">let media = 8;
+if (media >= 7) {
+  console.log("Aprovado");
+} else {
+  console.log("Reprovado");
+}</textarea><button onclick="runCode('ed2','out2')">▶ Executar</button><pre id="out2"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>10 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Estrutura de decisão</div>
+        <h1>SWITCH / CASE</h1>
+        <div class="body"><div class="editor"><textarea id="ed3">let dia = 2;
+switch (dia) {
+  case 1: console.log("Domingo"); break;
+  case 2: console.log("Segunda"); break;
+  default: console.log("Outro dia");
+}</textarea><button onclick="runCode('ed3','out3')">▶ Executar</button><pre id="out3"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>11 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Estruturas de repetição</div>
+        <h1>WHILE</h1>
+        <div class="body"><div class="editor"><textarea id="ed4">let i = 1;
+while (i <= 5) {
+  console.log("Número: " + i);
+  i++;
+}</textarea><button onclick="runCode('ed4','out4')">▶ Executar</button><pre id="out4"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>12 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Estruturas de repetição</div>
+        <h1>DO / WHILE</h1>
+        <div class="body"><div class="editor"><textarea id="ed5">let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);</textarea><button onclick="runCode('ed5','out5')">▶ Executar</button><pre id="out5"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>13 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Estruturas de repetição</div>
+        <h1>FOR</h1>
+        <div class="body"><div class="editor"><textarea id="ed6">for (let i = 1; i <= 5; i++) {
+  console.log("Iteração " + i);
+}</textarea><button onclick="runCode('ed6','out6')">▶ Executar</button><pre id="out6"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>14 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Vetores</div>
+        <h1>Arrays</h1>
+        <div class="body"><p>Arrays armazenam uma sequência de valores.</p>
+ <div class="editor"><textarea id="ed7">let notas = [8, 7.5, 9, 6];
+console.log(notas);
+console.log("Primeira nota:", notas[0]);
+console.log("Quantidade:", notas.length);</textarea><button onclick="runCode('ed7','out7')">▶ Executar</button><pre id="out7"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>15 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Manipulação de Arrays</div>
+        <h1>Adicionar, percorrer e transformar</h1>
+        <div class="body"><div class="editor"><textarea id="ed8">let alunos = ["Ana", "Bruno", "Carlos"];
+alunos.push("Diana");
+alunos.forEach(aluno => console.log(aluno));
+console.log("Total:", alunos.length);</textarea><button onclick="runCode('ed8','out8')">▶ Executar</button><pre id="out8"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>16 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">JavaScript no HTML</div>
+        <h1>Arquivo externo no <head></h1>
+        <div class="body"><pre>&lt;head&gt;
+  &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</pre>
+ <p>Separar o JavaScript em arquivo próprio facilita organização e manutenção.</p></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>17 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">JavaScript no HTML</div>
+        <h1>Código diretamente na página</h1>
+        <div class="body"><pre>&lt;script&gt;
+  alert("Olá, mundo!");
+&lt;/script&gt;</pre>
+ <button onclick="alert('Olá, mundo!')">▶ Testar alert()</button></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>18 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Entrada de dados</div>
+        <h1>Interagindo com o usuário</h1>
+        <div class="body"><div class="editor"><textarea id="ed9">let nome = prompt("Qual é o seu nome?");
+console.log("Olá, " + nome + "!");</textarea><button onclick="runCode('ed9','out9')">▶ Executar</button><pre id="out9"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>19 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Exercício 01</div>
+        <h1>Cálculo de média</h1>
+        <div class="body"><p>Solicite quatro notas, calcule a média e informe <b>aprovado</b> se média ≥ 7; caso contrário, <b>reprovado</b>. Mostre no console ou alert().</p>
+ <div class="editor"><textarea id="ed10">let n1 = Number(prompt("Nota 1:"));
+let n2 = Number(prompt("Nota 2:"));
+let n3 = Number(prompt("Nota 3:"));
+let n4 = Number(prompt("Nota 4:"));
+let media = (n1+n2+n3+n4)/4;
+console.log("Média:", media);
+console.log(media >= 7 ? "Aprovado" : "Reprovado");</textarea><button onclick="runCode('ed10','out10')">▶ Executar</button><pre id="out10"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>20 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Exercício 02</div>
+        <h1>Par ou ímpar</h1>
+        <div class="body"><div class="editor"><textarea id="ed11">let numero = Number(prompt("Digite um número:"));
+console.log(numero % 2 === 0 ? "Par" : "Ímpar");</textarea><button onclick="runCode('ed11','out11')">▶ Executar</button><pre id="out11"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>21 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Exercício 03</div>
+        <h1>Calculadora simples</h1>
+        <div class="body"><div class="editor"><textarea id="ed12">let a = Number(prompt("Primeiro número:"));
+let op = prompt("Operação (+, -, *, /):");
+let b = Number(prompt("Segundo número:"));
+let resultado;
+if (op === "+") resultado = a + b;
+else if (op === "-") resultado = a - b;
+else if (op === "*") resultado = a * b;
+else if (op === "/") resultado = b !== 0 ? a / b : "Erro: divisão por zero";
+else resultado = "Operação inválida";
+console.log("Resultado:", resultado);</textarea><button onclick="runCode('ed12','out12')">▶ Executar</button><pre id="out12"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>22 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Exercício 04</div>
+        <h1>Contagem regressiva</h1>
+        <div class="body"><div class="editor"><textarea id="ed13">let numero = Number(prompt("Digite um número:"));
+for (let i = numero; i >= 0; i--) {
+  console.log(i);
+}</textarea><button onclick="runCode('ed13','out13')">▶ Executar</button><pre id="out13"></pre></div></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>23 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Desafio em sala</div>
+        <h1>Agora é com a turma 🚀</h1>
+        <div class="body">Crie um programa que receba <b>5 notas</b>, armazene em um Array, calcule a média usando um laço e informe o resultado.
+ <div class="cards"><div>1. Entrada</div><div>2. Array</div><div>3. Repetição</div><div>4. Cálculo</div></div>
+ <p class="note">Extra: mostre também a maior e a menor nota.</p></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<section class="slide">
+      <div class="top"><span>AULA 4 • JAVASCRIPT</span><span>24 / 24</span></div>
+      <div class="content">
+        <div class="eyebrow">Fechamento</div>
+        <h1>O que aprendemos?</h1>
+        <div class="body"><div class="chips"><span>História</span><span>Usos</span><span>Tipos</span><span>Variáveis</span>
+ <span>IF</span><span>SWITCH</span><span>WHILE</span><span>DO/WHILE</span><span>FOR</span><span>Arrays</span><span>Entrada</span></div>
+ <h3 style="margin-top:32px">Pergunta para a turma</h3><p>Qual problema real você resolveria usando JavaScript no navegador?</p></div>
+      </div>
+      <div class="footer"><span>FACIMP WYDEN</span></div>
+    </section>
+<div class="nav-buttons" aria-label="Navegação dos slides">
+  <button class="nav-btn prev" type="button" aria-label="Slide anterior">&#8249;</button>
+  <button class="nav-btn next" type="button" aria-label="Próximo slide">&#8250;</button>
+</div>
+<div class="progress" id="progress"></div><div class="help">← → navegar • F tela cheia • R reiniciar</div>
+<script src="script.js"></script></body></html>

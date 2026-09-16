@@ -1,0 +1,31 @@
+<svg width="900" height="420" viewBox="0 0 900 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="820" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17243B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="highlight" x1="140" y1="90" x2="760" y2="290" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#72E5B2"/>
+      <stop offset="1" stop-color="#4BC0FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" rx="28" fill="url(#bg)"/>
+  <rect x="70" y="80" width="300" height="220" rx="22" fill="#0B1221" stroke="#2C3B5E" stroke-width="3"/>
+  <rect x="92" y="104" width="256" height="28" rx="12" fill="#182843"/>
+  <circle cx="114" cy="118" r="7" fill="#72E5B2"/>
+  <circle cx="140" cy="118" r="7" fill="#F7C66D"/>
+  <circle cx="166" cy="118" r="7" fill="#F56A6A"/>
+  <rect x="92" y="150" width="126" height="110" rx="16" fill="#101B2D" stroke="#33476F"/>
+  <rect x="230" y="150" width="118" height="78" rx="16" fill="#13233E" stroke="#33476F"/>
+  <rect x="230" y="240" width="118" height="20" rx="10" fill="#72E5B2" fill-opacity="0.7"/>
+  <rect x="530" y="96" width="260" height="176" rx="22" fill="#0C1528" stroke="#2C3B5E" stroke-width="3"/>
+  <rect x="560" y="126" width="200" height="28" rx="12" fill="#182843"/>
+  <rect x="560" y="172" width="87" height="56" rx="14" fill="#1A2B46"/>
+  <rect x="661" y="172" width="99" height="56" rx="14" fill="#1A2B46"/>
+  <rect x="560" y="242" width="200" height="14" rx="7" fill="#72E5B2" fill-opacity="0.7"/>
+  <path d="M374 190H520" stroke="url(#highlight)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M430 152V228" stroke="url(#highlight)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M430 190L520 190" stroke="url(#highlight)" stroke-width="10" stroke-linecap="round"/>
+  <text x="148" y="330" fill="#EAF2FF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">NAVEGADOR</text>
+  <text x="562" y="330" fill="#EAF2FF" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">SERVIDOR</text>
+</svg>
